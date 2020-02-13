@@ -29,7 +29,7 @@ export class SignIn extends React.Component {
 			console.log(error);
 		}
 	};
-	handlChange = event => {
+	handleChange = event => {
 		const { value, name } = event.target;
 
 		this.setState({ [name]: value });
@@ -46,7 +46,7 @@ export class SignIn extends React.Component {
 						name="email"
 						type="email"
 						value={this.state.email}
-						handleChange={this.handlChange}
+						handleChange={this.handleChange}
 						label="email"
 						required
 					/>
@@ -54,7 +54,7 @@ export class SignIn extends React.Component {
 						name="password"
 						type="password"
 						value={this.state.password}
-						handleChange={this.handlChange}
+						handleChange={this.handleChange}
 						label="password"
 						required
 					/>
